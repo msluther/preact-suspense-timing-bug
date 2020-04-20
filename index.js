@@ -9,7 +9,7 @@ function ShowMounted({ mounted }) {
 const LazyComponent = lazy(() => new Promise(resolve => {
   setTimeout(() => {
     resolve({ default: ShowMounted });
-  })
+  }, 5000)
 }));
 
 class Bug extends Component {
